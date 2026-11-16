@@ -1,0 +1,168 @@
+@import url('https://googleapis.com');
+
+:root {
+    --bg-color: #fff;
+    --card-bg: #fff;
+    --text-color: #fff;
+    --primary-color: #7c007c;
+}
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('fonts/PressStart2P.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Redaction 50';
+  src: url('fonts/Redaction50-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    image-rendering: pixelated;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+
+    background-image:URL('fundoSITE\ \(1\).png');
+    background-size: cover;
+    background-position:center
+    background-repeat no-repeat;
+    background-attachment: fixed;
+}
+
+h1, h2, h3, button{
+    font-family: 'Press Start 2P', monospace;
+    text-align: left;
+    background-color: #00586e;
+    max-width: 1300px;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 15px;
+    font-size: 25px;
+}
+
+p, span, a{
+    font-family: 'Redaction 50', monospace !important;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+
+.container {
+    max-width: 1300px;
+    margin: 20px auto;
+    padding: 70px;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.13); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.timeline-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    border-bottom: 2px solid #fff ;
+    padding-bottom: 10px;
+}
+
+.time-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #00586e;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.time-btn.active {
+    color: var(--primary-color);
+    border-bottom: 3px solid #00586e;
+    border-radius: 0;
+}
+
+.timeline-content {
+    font-family: 'Redaction 50', monospace;
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 80px;
+}
+
+.rodape {
+    background-color: #22222200;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  .imagem-centralizada {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 25px;
+  }
+
+  .imagens-jornada {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.imagens-jornada .bloco-imagem {
+    flex: 1;
+    flex-direction: column;
+    min-width: 250px;
+    width: 320px;
+    max-width: 400px;
+}
+
+.imagens-jornada {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.card-cronologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0;
+}
+
+.foto-cronologia {
+    width: 300px;
+    height: 320px;
+    object-fit: contain;
+    background-color: #ffffff;
+    border-radius: 15px;
+}
+
+.card-cronologia figcaption {
+    margin-top: 10px;
+     position: static !important;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
